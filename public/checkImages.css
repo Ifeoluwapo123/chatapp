@@ -1,0 +1,145 @@
+.phone{
+	border: 1px solid black;
+	width: 40%;
+	margin-left:30%;
+	margin-top: 20px;
+	height: 610px;
+	border-radius: 25px;
+	padding: 5px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background-color: black;
+}
+
+.phone > .phonename{
+	margin-left: 42%;
+	color: #ffffff;
+}
+
+.phone > .inner{
+	height:90%;
+	width: 100%;
+	padding: 5px;
+	border-radius: 2%;
+	background-color: #ffff;
+}
+
+.inner > .screen{
+	border:1px solid black;
+	height: 450px;
+	width: 100%;
+}
+
+.screen > .elements{
+	width: 100%;
+	height: 100%;
+}
+
+.container > .chatbox{
+	height: 100%;
+	width: 100%;
+	border: 2px solid black;
+}
+
+.phone .chatbox{
+	width: 100%;
+	position: relative;
+	top:-26px;
+}
+
+.elements > .chatlists{ 
+	background-color: #f2f2f2;
+	margin-left: 5px;
+	border-radius: 10px;
+}
+
+.elements > .chatlists p{
+	width: 100%;
+	color: green;
+	height: 10px;
+	font-family: cursive;
+	padding-left: 5px;
+	cursor: pointer;	
+}
+
+.chatlists p a{
+	text-decoration: none;
+}
+
+.chatlists p a:hover{
+	color: green;
+}
+
+.chatlists p img{
+	border-radius: 50%;
+}
+
+.container .chatlists {
+	height: 380px;
+	width: 100%;
+	overflow-y: scroll;
+	
+}
+
+.container .messages {
+	height: 360px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.screen{
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)) ,url('images/bg-01.jpg'); 
+	background-position: center;
+	background-repeat:repeat-x;
+	background-size: cover;
+	background-color: #f2f2f2;
+	padding-top: 15px;
+}
+
+.chatbox input{
+	width:100%;
+}
+
+.title{
+	background-attachment: fixed; 
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.container div{
+	display: inline-block;
+}
+
+.container label{
+	color: #000;
+}
+
+.container .phone > .mini{
+	height: 20px;
+	width: 20px;
+	margin-top: 7px;
+	background-color: #555;
+	margin-left: 27px;
+}
+
+.container .phone > .center{
+	font-size: 25px;
+	width: 40px;
+	margin-left: 120px;
+	color: white;
+}
+
+.container .phone > .back{
+	width: 0;
+	height: 0;
+	margin-top: 7px;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #555;
+	border-bottom: 10px solid transparent;
+	margin-left: 115px;
+}
+
+
+h3 img{
+	border-radius: 50%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat~~Up</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="message.css">
+</head>
+<body>
+	<div class="container">
+		<div class="phone">
+			<label class="phonename">ANDROID</label>
+			<div class="inner">
+				<div class="screen">
+					<% if(user.pics === 'none' && user.gender === 'Female'){%>
+						<h3 class="title"><img src="images/female.jpg" width="40px" height="40px" id="1"> <%=user.name%></h3>
+					<%}else if(user.pics === 'none' && user.gender === 'Male'){%>
+						<h3 class="title"><img src="images/male.jpg" width="40px" height="40px" id="1"> <%=user.name%></h3>
+					<%}else{%>
+						<h3 class="title"><img src="images/<%=user.pics%>" width="40px" height="40px" id="1"> <%=user.name%></h3>
+					<%}%>
+					<a href="/delete?all=<%=sess.email+'%'+user.email%>"><button>
+						Delete chats
+					</button></a>
+					<div class="elements">
+						<div class="messages" id="messages">
+							<% rsmessage.forEach(message=>{ %>
+							   <% if(message.status === 'recieved') { %>
+							   	   <p>
+							   	   	<%=message.message%>
+							   	   	<small style="color: green;  font-size: 9px"><%=message.time%></small>
+							   	   </p>
+							   <%}else{%>
+							   		<p style="margin-left: 106px; background-color: #fff432">
+							   	   	<%=message.message%>
+							   	   	<small style="color: green; font-size: 9px;"><%=message.time%></small>
+							   	   </p>
+							   <%}%>
+						    <%})%>
+						</div>
+						<p id="sender" style="display: none;"><%=sess.email%></p>
+						<p id="receiver" style="display: none;"><%=user.email%></p>
+						<div class="chatbox" style="">
+							<input type="text" name="chat" id="chat">
+						</div>	
+					</div>
+				</div>
+			</div>
+			<table>
+				<td>
+					<tr>
+						<label class="mini" onclick="mini()"> </label>
+						<label class="center" onclick="center()"> O </label>
+						<label class="back" onclick="back('<%=sess.email%>')"></label>
+					</tr>
+				</td>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="chat.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="users.js"></script>
+</html>

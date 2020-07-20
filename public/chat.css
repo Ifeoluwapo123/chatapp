@@ -1,0 +1,168 @@
+.label{
+	font-size:15px;
+}
+
+.phone{
+	border: 1px solid black;
+	width: 30%;
+	margin-left:40%;
+	margin-top: 20px;
+	height: 590px;
+	border-radius: 25px;
+	padding: 5px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background-color: black;
+}
+
+.phone > .phonename{
+	margin-left: 103px;
+	color: #ffffff;
+}
+
+.phone > .inner{
+	height: 90%;
+	width: 100%;
+	padding: 5px;
+	border-radius: 2%;
+	background-color: #ffff;
+}
+
+.inner > .screen{
+	border:1px solid black;
+	height: 450px;
+	width: 100%;
+}
+
+.screen > .elements{
+	width: 100%;
+	height: 100%;
+}
+
+.container > .chatbox{
+	height: 100%;
+	width: 100%;
+	border: 2px solid black;
+}
+
+.phone .chatbox{
+	width: 100%;
+	position: relative;
+	top:-26px;
+}
+
+.elements > .chatlists{ 
+	background-color: #f2f2f2;
+	padding-top: 15px;
+}
+
+.elements > .chatlists p{
+	width: 100%;
+	z-index: 5;
+	color: black;
+	border-bottom: 1px solid black;
+	height: 50px;
+	font-family: cursive;
+	padding-left: 5px;
+	cursor: pointer;	
+}
+
+.chatlists p a{
+	text-decoration: none;
+}
+
+.chatlists p a:hover{
+	color: green;
+}
+
+.chatlists p img{
+	border-radius: 50%;
+}
+
+.container .chatlists {
+	height: 380px;
+	width: 100%;
+	overflow-y: scroll;
+	
+}
+
+.container .messages {
+	height: 360px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.screen{
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)) ,url('images/bg-01.jpg'); 
+	background-position: center;
+	background-repeat:repeat-x;
+	background-size: cover;
+	background-color: #f2f2f2;
+	padding-top: 15px;
+}
+
+.chatbox input{
+	width:100%;
+}
+
+.title{
+	background-attachment: fixed; 
+	float: left;
+	font-family: sans-serif;
+}
+
+.container div{
+	display: inline-block;
+}
+
+.container label{
+	color: #000;
+}
+
+.container .phone > .mini{
+	height: 20px;
+	width: 20px;
+	margin-top: 7px;
+	background-color: #555;
+	margin-left: 27px;
+}
+
+.container .phone > .center{
+	font-size: 25px;
+	width: 30px;
+	margin-left: 75px;
+	color: white;
+}
+
+.container .phone > .back{
+	width: 0;
+	height: 0;
+	margin-top: 7px;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #555;
+	border-bottom: 10px solid transparent;
+	margin-left: 70px;
+}
+
+.elements > .messages{
+	background-color: #f2f2f2;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+.elements > .messages p{
+	width: 80px;
+	z-index: 5;
+	color: black;
+	height: 30px;
+	font-family: cursive;
+	margin-left: 5px;
+	border: 1px solid #555;
+	border-radius: 6px;
+	background-color: white;
+}
+
+img{
+	border-radius: 50%;
+	margin-right: 5px;
+}

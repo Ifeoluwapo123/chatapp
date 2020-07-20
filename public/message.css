@@ -1,0 +1,145 @@
+.label{
+	font-size:15px;
+}
+
+.phone{
+	border: 1px solid black;
+	width: 30%;
+	margin-left:40%;
+	margin-top: 20px;
+	height: 590px;
+	border-radius: 25px;
+	padding: 5px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background-color: black;
+}
+
+.phone > .phonename{
+	margin-left: 103px;
+	color: #ffffff;
+}
+
+.phone > .inner{
+	height: 90%;
+	width: 100%;
+	padding: 5px;
+	border-radius: 2%;
+	background-color: #ffff;
+}
+
+.inner > .screen{
+	border:1px solid black;
+	height: 450px;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+.screen > .elements{
+	width: 100%;
+	height: 100%;
+}
+
+.container > .chatbox{
+	height: 100%;
+	width: 100%;
+	border: 2px solid black;
+}
+
+.phone .chatbox{
+	width: 100%;
+	position: relative;
+	top:-17px;
+}
+
+.container .messages {
+	height: 350px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.chatbox input{
+	width:100%;
+}
+
+.title{
+	background-attachment: fixed; 
+	text-align: center;
+	font-family: sans-serif;
+	width: 100%;
+	height: 40px;
+}
+
+.container div{
+	display: inline-block;
+}
+
+.container label{
+	color: #000;
+}
+
+.container .phone > .mini{
+	height: 20px;
+	width: 20px;
+	margin-top: 7px;
+	background-color: #555;
+	margin-left: 27px;
+}
+
+.container .phone > .center{
+	font-size: 25px;
+	width: 30px;
+	margin-left: 75px;
+	color: white;
+}
+
+.container .phone > .back{
+	width: 0;
+	height: 0;
+	margin-top: 7px;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #555;
+	border-bottom: 10px solid transparent;
+	margin-left: 70px;
+}
+
+.elements > .messages{
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)) ,url('images/wall.jpg'); 
+	background-position: center;
+	background-repeat:repeat-x;
+	background-size: cover;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+.elements > .messages p{
+	background-color: white;
+	max-width: 130px;
+	word-wrap:break-word;
+	z-index: 5;
+	color: black;
+	font-family: cursive;
+	margin-left: 5px;
+	border: 1px solid #555;
+	border-radius: 6px;
+}
+
+.elements > .messages small{
+	color: white;
+}
+
+.message{
+	height: 30px;
+}
+
+.screen a{
+	color:red;
+	float: right;
+}
+
+h3 img{
+	border-radius: 50%;	
+}
+.screen h3{
+	font-family: cursive;
+}

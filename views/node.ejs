@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat~~Up</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="node.css">
+</head>
+<body>
+	<div class="container">
+		<div class="phone">
+			<label class="phonename">ANDROID</label>
+			<div class="inner">
+				<div class="screen">
+					<h3 class="title"><img src="images/bg-01.jpg" width="40px" height="40px" id="1">NodeJs Community</h3>
+					<div class="elements">
+						<button onclick="clearchat()">
+							Clear chats
+						</button>
+						<div class="messages" id="messages">
+							
+						</div>
+						<p id='name' style="display: none;"><%=sess.name%></p>
+						<div class="chatbox" style="">
+							<input type="text" name="chat" id="chat">
+						</div>	
+					</div>
+				</div>
+			</div>
+			<table>
+				<td>
+					<tr>
+						<label class="mini" onclick="mini()"> </label>
+						<label class="center" onclick="center()"> O </label>
+						<label class="back" onclick="back('<%=sess.email%>')"></label>
+					</tr>
+				</td>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="chat.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</html>

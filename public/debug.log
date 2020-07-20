@@ -1,0 +1,13 @@
+[0605/181811.669:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)
+[0605/181811.684:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[0605/181811.747:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0605/181811.747:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)
+[0605/202849.399:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)
+[0605/202849.415:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0605/202849.415:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)
+[0605/205003.550:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)
+[0605/205003.566:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0605/205003.566:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)
+[0606/025703.490:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)
+[0606/025703.506:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0606/025703.506:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Damilola\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Access is denied. (0x5)

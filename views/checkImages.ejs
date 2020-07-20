@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat~~Up</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="checkImages.css">
+</head>
+<body>
+	<div class="container">
+		<div class="phone">
+			<label class="phonename">ANDROID</label>
+			<div class="inner">
+				<div class="screen" id="myDiv">
+				<% if(typeof(sess) === 'undefined'){
+					if(user.pics === 'none' && user.gender === 'Female'){%>
+						<img src="images/female.jpg" width="100%" height="100%">
+					<%}else if(user.pics === 'none' && user.gender === 'Male'){%>
+						<img src="images/male.jpg" width="100%" height="100%">
+					<%}else{%>
+						<img src="images/<%=user.pics%>" width="100%" height="100%">
+					<%}
+				}else{
+					if(sess.pics === 'none' && sess.gender === 'Female'){%>
+						<img src="images/female.jpg" width="100%" height="80%">
+					<%}else if(sess.pics === 'none' && sess.gender === 'Male'){%>
+						<img src="images/male.jpg" width="100%" height="80%">
+					<%}else{%>
+						<img src="images/<%=sess.pics%>" width="100%" height="80%">
+					<%}%>
+					<% if(typeof(message) === 'undefined'){%>
+      	            	<label style="color: blue">Upload your dp:</label>
+                    <%}else{%>
+      	            	<label style="color: blue"><%= message %></label>
+                    <%}%>
+					<form action="/uploadimage" method="post" enctype="multipart/form-data">
+				        <input type="file" name="image" accept="image/*"><br>
+				        <input type="submit" value="upload">
+                    </form>
+				<%}%>
+				</div>
+			</div>
+			<table>
+				<td>
+					<tr>
+						<label class="mini" onclick="mini()"> </label>
+						<label class="center" onclick="center()"> O </label>
+						<% if(typeof(sess) === 'undefined'){%>
+						<label class="back" onclick="back('<%=usermail%>')"> </label>
+						<%}else{%>
+      	            	<label class="back" onclick="back('<%=sess.email%>')"> </label>
+                        <%}%>
+					</tr>
+				</td>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="chat.js"></script>
+
+</html>

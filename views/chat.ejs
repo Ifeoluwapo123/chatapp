@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat~~Up</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+<body>
+	<div class="container">
+		<div class="phone">
+			<label class="phonename">ANDROID</label>
+			<div class="inner">
+				<div class="screen">
+					<% if(sess.pics === 'none' && sess.gender === 'Female'){%>
+						<a href="/chatappimage"><img src="images/female.jpg" width="60px" height="60px" style="border-radius: 50%"></a><h3 class="title">NodeJS ChatApp</h3></a>
+					<%}else if(sess.pics === 'none' && sess.gender === 'Male'){%>
+						<a href="/chatappimage"><img src="images/male.jpg" width="60px" height="60px" style="border-radius: 50%"></a><h3 class="title">NodeJS ChatApp</h3></a>
+					<%}else{%>
+						<a href="/chatappimage"><img src="images/<%=sess.pics%>" width="60px" height="60px" style="border-radius: 50%"></a><h3 class="title">NodeJS ChatApp</h3></a>
+					<%}%>
+					<div class="elements" id="elements">
+						<div class="chatlists">
+							<p><img src="images/bg-01.jpg" width="40px" height="40px"><a href="/nodecomunity">Nodejs Community</a></p>
+							<% users.forEach(result=>{ %>
+								<% if(result.Pics === 'none' && result.Gender === 'Female'){%>	
+									<p><a href="/usersimages?data=<%=result.Email%>"><img src="images/female.jpg" width="40px" height="40px"></a><a href="/chatappmessages?user=<%=sess.email+'%'+result.Email%>"><%=result.Name+" "%>
+									<%if(result.status === 'active'){%>
+										<span class="glyphicon glyphicon-envelope">(<em>Unreplied</em>)
+										</span>
+									<%}%>
+									</a>
+									</p>
+								<%}else if(result.Pics === 'none' && result.Gender === 'Male'){%>
+									<p><a href="/usersimages?data=<%=result.Email%>"><img src="images/male.jpg" width="40px" height="40px"></a><a href="/chatappmessages?user=<%=sess.email+'%'+result.Email%>"><%=result.Name+" "%>
+									<%if(result.status === 'active'){%>
+										<span class="glyphicon glyphicon-envelope">(<em>Unreplied</em>)
+										</span>
+									<%}%>
+									</a>
+									</p>
+								<%}else{%>
+									<p><a href="/usersimages?data=<%=result.Email%>"><img src="images/<%=result.Pics%>" width="40px" height="40px"></a><a href="/chatappmessages?user=<%=sess.email+'%'+result.Email%>"><%=result.Name+" "%>
+									<%if(result.status === 'active'){%>
+										<span class="glyphicon glyphicon-envelope">(<em>Unreplied</em>)
+										</span>
+									<%}%>
+									</a>
+									</p>
+								<%}%>
+							<% }); %>
+						</div>
+						<div class="chatbox">
+							<p style="font-family: cursive; color: green"><%=sess.name%></p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<table>
+				<td>
+					<tr>
+						<label class="mini" onclick="mini()"> </label>
+						<label class="center" onclick="center()"> O </label>
+						<label class="back" onclick="home()"> </label>
+					</tr>
+				</td>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="chat.js"></script>
+</html>
